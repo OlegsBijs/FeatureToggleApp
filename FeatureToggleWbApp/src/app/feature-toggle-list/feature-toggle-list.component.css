@@ -1,0 +1,34 @@
+.toggle-list{
+    display: flex;
+
+    input {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+}
+.toggle-display-name{
+    font-size: 14pt;
+    width: 80px;
+}
+
+.btn-update{
+    background-color: rgb(19, 187, 187);
+    border-color: rgb(25, 25, 192);
+    height: 40px;
+    margin-right: 15px;
+}
+
+.btn-archive{
+    background-color: rgb(231, 118, 118);
+    border-color: red;
+    height: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border-bottom: 1px solid black;
+  }

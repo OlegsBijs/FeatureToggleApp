@@ -1,0 +1,24 @@
+<div>
+    <h2>Add Feature Toggle</h2>
+    <form class="add-feature" (ngSubmit)="onSubmit()">
+      <label for="displayName">Display Name:</label>
+      <input type="text" id="displayName" [(ngModel)]="newToggle.displayName" name="displayName" required>
+  
+      <label for="technicalName">Technical Name:</label>
+      <input type="text" id="technicalName" [(ngModel)]="newToggle.technicalName" name="technicalName" required>
+  
+      <label for="expiresOn">Expires On:</label>
+      <input type="date" id="expiresOn" [(ngModel)]="newToggle.expiresOn" name="expiresOn">
+  
+      <label for="description">Description:</label>
+      <textarea id="description" [(ngModel)]="newToggle.description" name="description"></textarea>
+  
+      <label for="inverted">Inverted:</label>
+      <input type="checkbox" id="inverted" [(ngModel)]="newToggle.inverted" name="inverted">
+  
+      <label for="customerIds">Customer IDs:</label>
+      <input type="text" id="customerIds" [(ngModel)]="newToggle.customerIds" name="customerIds" placeholder="Comma-separated customer IDs">
+  
+      <button type="submit">Add Feature Toggle</button>
+    </form>
+  </div>

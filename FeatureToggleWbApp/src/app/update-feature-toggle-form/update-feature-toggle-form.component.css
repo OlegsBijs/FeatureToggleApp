@@ -1,0 +1,8 @@
+.toggle-list{
+    display: flex;
+
+    input {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+}

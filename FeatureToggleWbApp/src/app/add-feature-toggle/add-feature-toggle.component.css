@@ -1,0 +1,8 @@
+.add-feature {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    input {
+        margin-bottom: 12px;
+    }
+}

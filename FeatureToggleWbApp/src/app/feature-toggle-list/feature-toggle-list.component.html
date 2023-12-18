@@ -1,0 +1,37 @@
+<table>
+  <thead>
+    <th>
+      Display Name
+    </th>
+    <th>
+      Technical Name
+    </th>
+    <th>
+      Expires On
+    </th>
+    <th>
+      Description
+    </th>
+    <th>
+      Inverted
+    </th>
+    <th>
+      Customers
+    </th>
+  </thead>
+  <tbody>
+    <ng-container class="toggle-list" *ngFor="let toggle of featureToggles">
+      <tr class="toggle-row">
+        <td>{{ toggle.displayName }}</td>
+        <td>{{ toggle.technicalName }}</td>
+        <td>{{ toggle.expiresOn | date }}</td>
+        <td>{{ toggle.description }}</td>
+        <td>{{ toggle.inverted }}</td>
+        <td>{{ toggle.customerIds }}</td>
+  
+      <button class="btn-update" [routerLink]="toggle.id">Update</button>
+      <button class="btn-archive" (click)="archiveFeatureToggle(toggle.id)">Archive</button>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>

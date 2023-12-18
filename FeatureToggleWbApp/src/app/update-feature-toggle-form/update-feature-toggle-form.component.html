@@ -1,0 +1,24 @@
+<div *ngIf="data$ | async">
+    <h2>Update Feature Toggle</h2>
+    <form class="toggle-list" [formGroup]="form">
+      <label for="displayName">Display Name:</label>
+      <input type="text" id="displayName" formControlName="displayName" required>
+  
+      <label for="technicalName">Technical Name:</label>
+      <input type="text" id="technicalName" formControlName="technicalName" required>
+  
+      <label for="expiresOn">Expires On:</label>
+      <input type="date" id="expiresOn"  formControlName="expiresOn">
+  
+      <label for="description">Description:</label>
+      <textarea id="description" formControlName="description"></textarea>
+  
+      <label for="inverted">Inverted:</label>
+      <input type="checkbox" id="inverted" formControlName="inverted">
+  
+      <label for="customerIds">Customer IDs:</label>
+      <input type="text" id="customerIds" formControlName="customerIds" placeholder="Comma-separated customer IDs">
+  
+      <button type="submit" (click)="updateFeatureToggle(form.getRawValue())">Update Feature Toggle</button>
+    </form>
+  </div>
